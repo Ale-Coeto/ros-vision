@@ -35,9 +35,14 @@ class PersonTracker():
                 frame_result = results[0].plot()
 
                 cv2.imshow("Image", frame_result)
+
+                if cv2.waitKey(1) & 0xFF == ord("q"):
+                    break
                 
             else:
                 print("No image")
+
+        cv2.destroyAllWindows()
             
 
 node = PersonTracker()
