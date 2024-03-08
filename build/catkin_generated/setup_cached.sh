@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/workspace/ros-vision/devel:$CMAKE_PREFIX_PATH"
 export PWD='/workspace/ros-vision/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/workspace/ros-vision/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/workspace/ros-vision/src:$ROS_PACKAGE_PATH"
