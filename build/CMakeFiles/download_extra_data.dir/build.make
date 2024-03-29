@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/ros-vision/src
+CMAKE_SOURCE_DIR = /workspace/Roborregos/ros-vision/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/ros-vision/build
+CMAKE_BINARY_DIR = /workspace/Roborregos/ros-vision/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /workspace/ros-vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/ros-vision/src /workspace/ros-vision/src /workspace/ros-vision/build /workspace/ros-vision/build /workspace/ros-vision/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/Roborregos/ros-vision/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/Roborregos/ros-vision/src /workspace/Roborregos/ros-vision/src /workspace/Roborregos/ros-vision/build /workspace/Roborregos/ros-vision/build /workspace/Roborregos/ros-vision/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

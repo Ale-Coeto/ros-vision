@@ -1,0 +1,8 @@
+prefix=/workspace/Roborregos/ros-vision/devel
+
+Name: vision
+Description: Description of vision
+Version: 0.0.0
+Cflags: -I/workspace/Roborregos/ros-vision/devel/include
+Libs: -L${prefix}/lib 
+Requires: roslib message_runtime

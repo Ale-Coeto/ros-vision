@@ -1,8 +1,8 @@
-# Install script for directory: /workspace/ros-vision/src
+# Install script for directory: /workspace/Roborregos/ros-vision/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/workspace/ros-vision/install")
+  set(CMAKE_INSTALL_PREFIX "/workspace/Roborregos/ros-vision/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,89 +49,89 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/_setup_util.py")
+   "/workspace/Roborregos/ros-vision/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE PROGRAM FILES "/workspace/ros-vision/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE PROGRAM FILES "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/env.sh")
+   "/workspace/Roborregos/ros-vision/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE PROGRAM FILES "/workspace/ros-vision/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE PROGRAM FILES "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/setup.bash;/workspace/ros-vision/install/local_setup.bash")
+   "/workspace/Roborregos/ros-vision/install/setup.bash;/workspace/Roborregos/ros-vision/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE FILE FILES
-    "/workspace/ros-vision/build/catkin_generated/installspace/setup.bash"
-    "/workspace/ros-vision/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE FILE FILES
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/setup.bash"
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/setup.sh;/workspace/ros-vision/install/local_setup.sh")
+   "/workspace/Roborregos/ros-vision/install/setup.sh;/workspace/Roborregos/ros-vision/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE FILE FILES
-    "/workspace/ros-vision/build/catkin_generated/installspace/setup.sh"
-    "/workspace/ros-vision/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE FILE FILES
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/setup.sh"
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/setup.zsh;/workspace/ros-vision/install/local_setup.zsh")
+   "/workspace/Roborregos/ros-vision/install/setup.zsh;/workspace/Roborregos/ros-vision/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE FILE FILES
-    "/workspace/ros-vision/build/catkin_generated/installspace/setup.zsh"
-    "/workspace/ros-vision/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE FILE FILES
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/setup.zsh"
+    "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/workspace/ros-vision/install/.rosinstall")
+   "/workspace/Roborregos/ros-vision/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/workspace/ros-vision/install" TYPE FILE FILES "/workspace/ros-vision/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/workspace/Roborregos/ros-vision/install" TYPE FILE FILES "/workspace/Roborregos/ros-vision/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/workspace/ros-vision/build/gtest/cmake_install.cmake")
-  include("/workspace/ros-vision/build/follow/cmake_install.cmake")
+  include("/workspace/Roborregos/ros-vision/build/gtest/cmake_install.cmake")
+  include("/workspace/Roborregos/ros-vision/build/vision/cmake_install.cmake")
 
 endif()
 
@@ -143,5 +143,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/workspace/ros-vision/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspace/Roborregos/ros-vision/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

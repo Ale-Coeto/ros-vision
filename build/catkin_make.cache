@@ -1,2 +1,2 @@
-follow
--DCATKIN_DEVEL_PREFIX=/workspace/ros-vision/devel -DCMAKE_INSTALL_PREFIX=/workspace/ros-vision/install -G Unix Makefiles
+vision
+-DCATKIN_DEVEL_PREFIX=/workspace/Roborregos/ros-vision/devel -DCMAKE_INSTALL_PREFIX=/workspace/Roborregos/ros-vision/install -G Unix Makefiles
