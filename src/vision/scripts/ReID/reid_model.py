@@ -141,33 +141,60 @@ def fliplr(img):
 
 
 def extract_feature_from_img(image, model):
-    batchsize=32
-    # Load and preprocess the image
-    # image = Image.open(image_path).convert('RGB')
-    # n, c, h, w = image.size()
+    if use_gpu:
+        # Load and preprocess the image
+        # image = Image.open(image_path).convert('RGB')
+        # n, c, h, w = image.size()
 
-    image = data_transforms(image).unsqueeze(0)  # Add batch dimension
-    # ff = torch.FloatTensor(n,opt.linear_num).zero_().cuda()
+        image = data_transforms(image).unsqueeze(0)  # Add batch dimension
+        # ff = torch.FloatTensor(n,opt.linear_num).zero_().cuda()
 
-    # Extract features from the image
-    model.eval()
-    with torch.no_grad():
-        features = torch.zeros(1, linear_num).cuda() if use_gpu else torch.zeros(1, linear_num)
-        for i in range(2):
-            if i == 1:
-                # Apply horizontal flipping for augmentation
-                image = torch.flip(image, dims=[3])
-            input_img = Variable(image.cuda()) if use_gpu else Variable(image)
-            for scale in ms:
-                if scale != 1:
-                    input_img = torch.nn.functional.interpolate(input_img, scale_factor=scale, mode='bicubic', align_corners=False)
-                outputs = model(input_img)
-                features += outputs
+        # Extract features from the image
+        model.eval()
+        with torch.no_grad():
+            features = torch.zeros(1, linear_num).cuda() if torch.cuda.is_available() else torch.zeros(1, linear_num)
+            for i in range(2):
+                if i == 1:
+                    # Apply horizontal flipping for augmentation
+                    image = torch.flip(image, dims=[3])
+                input_img = Variable(image.cuda())
+                for scale in ms:
+                    if scale != 1:
+                        input_img = torch.nn.functional.interpolate(input_img, scale_factor=scale, mode='bicubic', align_corners=False)
+                    outputs = model(input_img)
+                    features += outputs
 
-        # Normalize features
-        features /= torch.norm(features, p=2, dim=1, keepdim=True)
-        # features = features.cpu()
-    return features.cpu()
+            # Normalize features
+            features /= torch.norm(features, p=2, dim=1, keepdim=True)
+            # features = features.cpu()
+        return features.cpu()
+    else:
+        image = data_transforms(image)  # Add batch dimension
+        # ff = torch.FloatTensor(n,opt.linear_num).zero_().cuda()
+
+        # Extract features from the image
+        model.eval()
+        with torch.no_grad():
+            features = torch.zeros(linear_num).cuda() if use_gpu else torch.zeros(linear_num)
+            for i in range(2):
+                if i == 1:
+                    # Apply horizontal flipping for augmentation
+                    image = torch.flip(image, dims=[2])
+                input_img = image.unsqueeze(0)
+                # if use_gpu:
+                #     input_img = Variable(image.cuda())
+                # else:
+                #     input_img = Variable(image)
+                for scale in ms:
+                    if scale != 1:
+                        input_img = torch.nn.functional.interpolate(input_img, scale_factor=scale, mode='bicubic', align_corners=False)
+                    outputs = model(input_img)
+                    features += outputs.squeeze()
+
+            # Normalize features
+            features /= torch.norm(features, p=2, dim=0)
+            # features = features.cpu()
+        return features.cpu()
 
 def compare_images(features1, features2, threshold=0.4):
     if features1.ndim != 1 or features2.ndim != 1:

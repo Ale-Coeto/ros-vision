@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/workspace/Roborregos/ros-vision/build'
-export PYTHONPATH="/workspace/Roborregos/ros-vision/devel/lib/python3/dist-packages:$PYTHONPATH"

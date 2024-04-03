@@ -7,5 +7,7 @@
    "IMG"
    "<IMG_LIST>"
    "IMG_LIST"
+   "<TARGET>"
+   "TARGET"
   ))
 
